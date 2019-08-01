@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Array Visualizer</title>
+</head>
+
+<body>
+
+<form method="post">
+    <div>
+        <label>Array initalized to:</label>
+        <p>[
+            {% for i in range(array.size) %}
+                ({{ array.get(i) }})
+            {% endfor %}
+        ]</p>
+    </div>
+
+    <div>
+        {% if error %}
+            <p style="color:red">{{ error }}</p>
+        {% endif %}
+        insert new item to array: <input type="text" name="input_value"/>
+    </div>
+
+    <div>
+        <button type="submit">Update List !</button>
+    </div>
+</form>
+
+</body>
+
+</html>
