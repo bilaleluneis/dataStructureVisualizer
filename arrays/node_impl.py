@@ -7,7 +7,6 @@ __email__ = "foundwonder@gmail.com and bilaleluneis@gmail.com"
 from .abstract import AbstractArray, ArrayIndexOutOfBoundError
 from typing import TypeVar, SupportsInt, Optional
 
-# Type is of or subtype of int, bool
 T = TypeVar("T", int, bool, SupportsInt)
 
 
