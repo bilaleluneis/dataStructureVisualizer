@@ -10,7 +10,7 @@
 
 <form method="post">
     <div>
-        <label>Array initalized to:</label>
+        <label>Array initialized to:</label>
         <p>[
             {% for i in range(array.size) %}
                 ({{ array.get(i) }})
@@ -23,10 +23,28 @@
             <p style="color:red">{{ error }}</p>
         {% endif %}
         insert new item to array: <input type="text" name="input_value"/>
+        <br>input the index to insert: <input type="text" name="input_index"/>
     </div>
 
     <div>
-        <button type="submit">Update List !</button>
+        <button type="submit" name="update_list">Update List !</button>
+    </div>
+
+    <div>
+        <label>Random array generated is:</label>
+        <p>[
+            {% for i in range(random_array.size) %}
+                ({{ random_array.get(i) }})
+            {% endfor %}
+        ]</p>
+    </div>
+
+    <div>
+        insert the size of random array: <input type="text" name="input_size"/>
+    </div>
+
+    <div>
+        <button type="submit" name = "gen_random_list">Update random list !</button>
     </div>
 </form>
 
