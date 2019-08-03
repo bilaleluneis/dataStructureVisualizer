@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stack Visualizer</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='styles/mainpage.css') }}">
+</head>
+<body>
+<form method="post">
+    <div>
+        <label>Stack initialized to:</label>
+        <div>[
+            {% for i in range(stack_list_impl.size) %}
+                <br><stack_number_container>{{ stack_list_impl.get(i) }}</stack_number_container>
+            {% endfor %}
+        ]</div>
+{#        <p>#}
+{#            {{ stack_list_impl.__str__ }}#}
+{#        </p>#}
+    </div>
+
+    <div>
+        push new value to stack: <input type="text" name="push_value"/><button type="submit" name="push_to_stack">Push to Stack!</button>
+    </div>
+
+    <div>
+        pop the last value from stack:<button type="submit" name="pop_from_stack">Pop from Stack!</button>
+    </div>
+
+</form>
+
+</body>
+</html>
