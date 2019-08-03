@@ -3,7 +3,7 @@ __since__ = "July 2019"
 __email__ = "bilaleluneis@gmail.com"
 
 from unittest import TestCase
-from arrays.node_impl import Node, InvalidTypeError
+from data_structure.arrays.node_impl import Node, InvalidTypeError
 from typing import Optional
 
 

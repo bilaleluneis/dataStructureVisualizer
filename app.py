@@ -1,9 +1,9 @@
 from flask import Flask, render_template, request, redirect, url_for
-from arrays.list_impl import ArrayListImpl, ArrayIndexOutOfBoundError, Optional
-from arrays.node_impl import ArrayNodeImpl
+from data_structure.arrays.list_impl import ArrayListImpl, ArrayIndexOutOfBoundError, Optional
+from data_structure.arrays.node_impl import ArrayNodeImpl
 import logging as log
 from random import randint
-from arrays.stack_object import Stack
+from data_structure.stacks.stack_object import Stack
 
 app = Flask(__name__)
 

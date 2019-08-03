@@ -2,9 +2,9 @@ __author__ = "Jieshu Wang and Bilal El Uneis"
 __since__ = "July 2019"
 __email__ = "foundwonder@gmail.com and bilaleluneis@gmail.com"
 
-from unittest import TestCase, skip
+from unittest import TestCase
 import logging as log
-from arrays.node_impl import *
+from data_structure.arrays.node_impl import *
 
 
 class TestArrayNodeImpl(TestCase):
