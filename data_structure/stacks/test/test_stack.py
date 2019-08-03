@@ -3,9 +3,9 @@ __since__ = "Jul 2019"
 __email__ = "bilaleluneis@gmail.com, foundwonder@gmail.com"
 
 from unittest import TestCase
-from data_structure.stacks.stack_object import Stack
-from data_structure.arrays.list_impl import ArrayListImpl
-from data_structure.arrays.node_impl import ArrayNodeImpl
+from ..stack_object import Stack
+from ...arrays.list_impl import ArrayListImpl
+from ...arrays.node_impl import ArrayNodeImpl
 import logging as log
 
 

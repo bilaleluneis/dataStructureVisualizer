@@ -3,8 +3,8 @@ __since__ = "July 2019"
 __email__ = "foundwonder@gmail.com and bilaleluneis@gmail.com"
 
 from unittest import TestCase
-from data_structure.arrays.abstract import ArrayIndexOutOfBoundError
-from data_structure.arrays.list_impl import ArrayListImpl
+from ..abstract import ArrayIndexOutOfBoundError
+from ..list_impl import ArrayListImpl
 from typing import Optional
 import logging as log
 

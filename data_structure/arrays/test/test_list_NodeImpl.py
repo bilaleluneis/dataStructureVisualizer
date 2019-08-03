@@ -4,7 +4,7 @@ __email__ = "foundwonder@gmail.com and bilaleluneis@gmail.com"
 
 from unittest import TestCase
 import logging as log
-from data_structure.arrays.node_impl import *
+from ..node_impl import *
 
 
 class TestArrayNodeImpl(TestCase):
