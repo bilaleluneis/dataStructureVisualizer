@@ -14,13 +14,12 @@
                 <br><stack_number_container>{{ stack_list_impl.get(i) }}</stack_number_container>
             {% endfor %}
         ]</div>
-{#        <p>#}
-{#            {{ stack_list_impl.__str__ }}#}
-{#        </p>#}
     </div>
 
     <div>
-        push new value to stack: <input type="text" name="push_value"/><button type="submit" name="push_to_stack">Push to Stack!</button>
+        <label for="push_value">push new value stack:</label>
+        <input type="text" name="push_value"/>
+        <button type="submit" name="push_to_stack">Push to Stack!</button>
     </div>
 
     <div>
