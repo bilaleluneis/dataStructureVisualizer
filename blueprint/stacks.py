@@ -10,9 +10,8 @@ import logging as log
 
 stacks: Blueprint = Blueprint("stacks", __name__, template_folder="templates")
 log.basicConfig(level=log.INFO)
-
-stacks_render_template_dic = {"stack_list_impl": Stack(ArrayListImpl()),
-                              "stack_node_impl": Stack(ArrayNodeImpl())}
+stacks_render_template_dic: {str: Stack} = {"stack_list_impl": Stack(ArrayListImpl()),
+                                            "stack_node_impl": Stack(ArrayNodeImpl())}
 
 
 @stacks.route("/stacks", methods=["GET"])

@@ -39,7 +39,7 @@ def update_list():
     try:
         global arrays_render_template_dic
         arrays_render_template_dic["array"].insert(value_to_insert, index_to_insert)
-        return redirect(url_for("arrays.get_arrays"))
+        return redirect(url_for(".get_arrays"))
     except ArrayIndexOutOfBoundError as insertError:
         log.error(insertError)
         return render_template("arrays.html", array=arrays_render_template_dic["array"], error=str(insertError))
@@ -52,4 +52,4 @@ def gen_random():
     for i in range(size_to_generate):
         int_to_insert: int = randint(0, 100)
         arrays_render_template_dic["random_array"].insert(int_to_insert)
-    return redirect(url_for("arrays.get_arrays"))
+    return redirect(url_for(".get_arrays"))
