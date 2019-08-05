@@ -1,5 +1,8 @@
+__author__ = "Jieshu Wang and Bilal El Uneis"
+__since__ = "Aug 2019"
+__email__ = "foundwonder@gmail.com and bilaleluneis@gmail.com"
+
 from flask import Flask
-import logging as log
 from blueprint.arrays import arrays
 from blueprint.stacks import stacks
 
